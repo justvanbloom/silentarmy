@@ -555,8 +555,8 @@ def main():
     parser.add_option(
             "--instances",
             dest="instances", action="store", type="int", metavar="N",
-            default=2,
-            help="run N instances of Equihash per GPU (default: 2)")
+            default=1,
+            help="run N instances of Equihash per GPU (default: 1)")
     parser.add_option(
             "-c", "--connect",
             dest="pool", action="store", type="string", metavar="POOL",
@@ -587,7 +587,6 @@ def main():
         fatal("Invalid syntax for --use: %s" % opts.use)
     if opts.instances < 1:
         fatal("The number of instances per GPU should be 1 or greater")
-
 
     Silentarmy(opts).run()
 

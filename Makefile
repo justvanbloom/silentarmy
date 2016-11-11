@@ -21,7 +21,7 @@ endif
 
 
 CPPFLAGS = -I${OPENCL_HEADERS}
-CFLAGS = -O2 -std=gnu99 -pedantic -Wextra -Wall -ggdb \
+CFLAGS = -O2 -std=gnu99 -pedantic -Wextra -Wall \
     -Wno-deprecated-declarations \
     -Wno-overlength-strings
 LDFLAGS = -rdynamic -L${LIBOPENCL}
