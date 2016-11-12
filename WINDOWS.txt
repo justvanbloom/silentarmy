@@ -1,0 +1,21 @@
+This is an Windows x86_64 port of SILENTARMY v5.
+I quickly hacked this up, so use this at your own risk.
+All you have to do is to install the Cygwin version of
+Python 3.4 and edit and run "start.bat". 
+
+Cygwin can be downloaded at: https://cygwin.com/index.html
+Make sure to select the "Python3: Py3K language interpreter"
+package under "Python". PLEASE NOTE THAT THE OFFICIAL
+WINDOWS VERSION OF PYTHON DOES NOT WORK WITH THIS BINARY!
+
+If you find this port useful and/or would like to see 
+a feature-rich ZEC miner based on it, please consider
+donations to:
+
+t1NwUDeSKu4BxkD58mtEYKDjzw5toiLfmCu
+
+Last but not least, mrb, nerdralph, eXtremal, and Genoil,
+thank you all so much for the great work. You guys are 
+truly the cream of the FOSS movement.
+
+zawawa @ bitcointalk.org
