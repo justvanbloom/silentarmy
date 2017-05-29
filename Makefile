@@ -12,7 +12,7 @@ OPENCL_HEADERS = "/System/Library/Frameworks/OpenCL.framework/Headers/"
 LIBOPENCL = "/System/Library/Frameworks/OpenCL.framework/Versions/Current/Libraries"
 LDLIBS = -framework OpenCL
 # gcc installed with brew or macports cause xcode gcc is only clang wrapper
-CC = gcc-6
+CC = /usr/local/Cellar/gcc@6/6.3.0/bin/gcc-6
 endif
 
 # Change this path if the SDK was installed in a non-standard location
