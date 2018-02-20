@@ -90,6 +90,9 @@ and statistics in progressively more and more details.
 * 41.0 sol/s with one RX 480 8GB
 * 30.5 sol/s with one GTX Titan X (Maxwell)
 * 30.5 sol/s with one GTX Titan (Kepler)
+*  5   sol/s with macbookpro internal intel 630
+* 15   sol/s with macbookpro Radeon 560 Pro 
+
 
 Note: the `silentarmy` **miner** automatically achieves this performance level,
 however the `sa-solver` **command-line solver** by design runs only 1 instance
@@ -180,13 +183,19 @@ Compiling SILENTARMY is easy:
  ``$ brew install python3``
  or
 `$ sudo port install python3` 
-3. Checkout the repository
+3a. Checkout the repository
  ``$ git clone https://github.com/justvanbloom/silentarmy.git``
+3b. Get the latest gcc compiler
+ ``$ brew install gcc``
+3c  Note the version (at feb 2018 it is gcc-7 not gcc-6)
+3d edit the Makefile to match the gcc version
 4. Compile the Binary using
  `$ make`
 5. Test if it works
 `$ make test`
 
+(Not sure about the OpenCl and sa-solver test below; to be tested but the 
+ software run ok)
 
 You may need to specify the paths to the locations of your OpenCL C headers
 and libOpenCL.so if the compiler does not find them:
